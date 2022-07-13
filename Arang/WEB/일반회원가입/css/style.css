@@ -1,0 +1,179 @@
+@charset "UTF-8";
+body {
+  background-color: #EAE9E9;
+}
+
+/* //general ui */
+/* input default style */
+input {
+  padding: 10px;
+  display: inline-block;
+  border: 1px solid #f9f9f9;
+  background-color: #f9f9f9;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid #f9f9f9;
+}
+
+/* input size type */
+input.big {
+  width: 478px;
+}
+
+input.middle {
+  width: 280px;
+}
+
+input.small {
+  width: 150px;
+}
+
+input.tiny {
+  width: 100px;
+}
+
+
+
+/* check box label style */
+/* .checkbox-group input[type=checkbox] {
+  accent-color: #EB6445;
+  border: none;
+}
+
+
+.checkbox-group {
+  text-align: center;
+  color: #333333;
+}
+
+.checkbox-group p {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #989898;
+  margin-top: 15px;
+  margin-bottom: 10px;
+} */
+
+
+
+
+/* button type */
+button {
+  background-color: transparent;
+  background-image: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+button:focus {
+  outline: none;
+}
+
+.gbtn {
+  padding: 10px 15px;
+}
+
+.gbtn.normal {
+  padding: 10px 15px;
+  color: #ffffff;
+  font-size: 15px;
+  min-width: 150px;
+  background-color: #221814;
+}
+
+.gbtn.normal:hover {
+  background-color: #EB6445;
+}
+
+/* button color style */
+.button-group {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.table_a {
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table_a tr td {
+  position: relative;
+  border-left: 0;
+  border-right: 0;
+  padding-bottom: 15px;
+  font-size: 14px;
+}
+
+.table_a tr td:nth-child(3) {
+  padding-bottom: 100px;
+}
+
+.table_a td > * { margin: 0 auto;}
+
+.table_a tr td:nth-child(1) {
+  width: 100px;
+  color: #333333;
+  text-align: center;
+}
+
+.table_a tr td:nth-child(4) {
+  padding-top: : 60px;
+}
+
+.txt {
+  display:inline-block;
+  font-size: 14px;
+  color: #717071;
+  margin: 5px 0 0 5px;
+}
+
+/* general ui// */
+
+#wrap {
+  max-width: 310px;
+  min-width: 310px;
+  margin: 0 auto;
+}
+
+#wrap .title {
+  position: relative;
+  text-align: center;
+  line-height: 50px;
+  padding: 10px 0 0;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #333333;
+}
+
+#wrap .title h1 {
+  display: inline-block;
+  font-size: 25px;
+  line-height: 1;
+  color: #333333;
+}
+
+label + .txt {
+  line-height: 21px;
+}
+
+
+#wrap .login {
+  position: relative;
+  text-align: center;
+  line-height: 50px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#wrap .login p {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1;
+  color: #333333;
+}
+
+#wrap .login a:hover {
+  color: #EB6445;
+}
