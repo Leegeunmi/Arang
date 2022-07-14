@@ -1,0 +1,186 @@
+// layout공통---
+$headerHeight: 65px;
+$footerHeight: 80px;
+$mainMinHeight: calc(100vh - (#{$headerHeight} + #{$footerHeight} + 51px));
+#wrap {
+  width: 1320px;
+  margin: 0 auto;
+  #header {
+    position: relative;
+    height: $headerHeight;
+    margin-bottom: 10px;
+    // 로고영역
+    #top-logo {
+      float: left;
+      a {
+        height: 60px;
+        line-height: $headerHeight;
+      }
+    }
+    // 메인메뉴
+    #top-nav {
+      z-index: 500;
+      position: relative;
+      height: $headerHeight;
+      float: right;
+      ul { //#top-nav ul 표기와 동일하다   그리고 참고 : //두개하면 주석이 보이고 /// 세개하면 컨파일했을 때 주석이 안보인다.
+        float: left;
+        li {
+          position: relative;
+          float: left;
+          margin-left: 30px;
+          &:first-child {margin-left: 0;}
+          a {
+            display: inline-block;//마우스 올릴때 색깔바뀌는 영역을 넓히는 것 (근처에 가도 색깔바뀌게하기)
+            width: 100%;
+            height: 100%;
+            line-height: $headerHeight;
+          }
+          &:hover {
+            .sub-menu {
+              visibility: visible;
+              top: 100%;
+              opacity: 1;
+            }
+          }
+        }
+        &.side_menu {
+          margin-left: 100px;
+        }
+        //submenu구현
+        .sub-menu {
+          position: absolute;
+          border: 1px solid $boderColorPrimary;
+          visibility: hidden;
+          top: calc(100% - 3px);
+          opacity: 0;
+          transition: .3s;
+          li {
+            width: 100%;
+            margin: 0;
+            background: #ededed;
+            box-sizing: border-box;
+            padding: 0 10px;
+            min-width: 150px;
+            transition: .3s;
+            &:hover {
+              background: $gbtnColorHover;
+              a {
+                color: #ededed;
+              }
+            }
+            a {
+              height: 40px;
+              line-height: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+  main {
+    min-height: $mainMinHeight;
+  }
+  // #footer {
+  //   margin-top: 50px;
+  //   height: $footerHeight;
+  //   line-height: $footerHeight;
+  //   text-align: center;
+  //   box-sizing: border-box;
+  //   border-top: 1px solid $boderColorPrimary;
+  //   color: $fontColorPrimary;
+  // }
+
+  #footer {
+    margin-top: 150px;
+    // border-top: 1px solid $boderColorPrimary;
+    color: $fontColorPrimary;
+    & > .container {
+      padding: 30px 0;
+      text-align: center;
+    }
+    .container {
+      .row {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .column {
+          flex: 20%;
+          padding: 0 10px;
+          margin-bottom: 30px;
+          box-sizing: border-box;
+          &.footer-logo {
+            flex: 100px;
+            h3 {
+              font-size: 34px;
+              line-height: 1;
+              font-weight: 700;
+              padding: 2px 0 2px 0;
+            }
+          }
+          &.news {
+            input {
+              margin-top: 10px;
+              &[type=text] {
+                border: 0;
+                padding: 6px 8px;
+                width: 65%;
+                box-sizing: border-box;
+              }
+              &[type=submit] {
+                border: 0;
+                padding: 6px 0;
+                width: 35%;
+                background: $footerBtnColor;
+                color: white;
+                cursor: pointer;
+              }
+            }
+          }
+          //column title
+          h4 {
+            position: relative;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding-bottom: 12px;
+            margin-bottom: 20px;
+            //column title underline
+            &:before, &:after {
+              content: '';
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              height: 2px;
+            }
+            &:before {
+              right: 0; /*width: 100%*/
+              background: #2e2e2e;
+            }
+            &:after {
+              width: 100px;
+              background: $boderColorPrimary;
+            }
+          }
+          //ul list 영역
+          ul {
+            li {
+              border-bottom: 1px solid #2e2e2e;
+              padding: 10px 0;
+              &:nth-child(1) {
+                padding-top: 0;
+              }
+            }
+          }
+          //column text
+          p {
+            line-height: 26px;
+          }
+        }
+      }
+    }
+    .footer-top {
+      padding: 60px 0 30px;
+    }
+  }
+}
