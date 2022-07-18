@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+#header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #eae9e9;
+  border-bottom: 1px solid #ededed;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+  height: 50px;
+  margin-bottom: 10px;
+}
+#header .inner {
+  position: relative;
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+  display: table;
+}
+
+#top-logo {
+  position: fixed;
+  float: left;
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+#top-logo a {
+  font-family: 'Bebas Neue', cursive;
+  font-weight: normal;
+  line-height: 50px;
+  top: 0;
+}
+
+#top-nav {
+  z-index: 500;
+  position: relative;
+  height: 50px;
+  float: right;
+}
+#top-nav ul {
+  float: left;
+}
+#top-nav ul li {
+  position: relative;
+  float: left;
+  margin-left: 50px;
+}
+#top-nav ul.side_menu li {
+  margin-left: 15px;
+}
+#top-nav ul li:first-child {
+  margin-left: 0;
+}
+#top-nav a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  line-height: 50px;
+}
+/* &:hover 생략*/
+#top-nav ul.center_menu {
+  margin-right: 255px;
+}
+#top-nav ul.side_menu img {
+  padding-top: 17px;
+  padding-right: -50px;
+  height: 18px;
+}
+
+.sub-menu {
+  position: absolute;
+  border: 1px solid tomato;
+  visibility: hidden;
+  top: calc(100% - 3px);
+  opacity: 0;
+  transition: .3s;
+}
+.sub-menu li {
+  width: 100%;
+  margin: 0;
+  background: #ededed;
+  box-sizing: border-box;
+  padding: 0 10px;
+  min-width: 150px;
+  transition: .3s;
+}
+.sub-menu li a {
+  height: 40px;
+  line-height: 40px;
+}
+.sub-menu li:hover {
+  background-color: tomato;
+}
+.sub-menu li a:hover {
+  color: #ededed;
+}

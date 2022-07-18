@@ -1,0 +1,76 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap');
+
+/* 갤러리페이지 */
+.headline_artworks {
+  text-align: center;
+  margin-top: 170px;
+}
+
+.headline_artworks h3 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+h4 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 23px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+#sub-nav ul {
+  display: flex;
+  justify-content: center;
+}
+#sub-nav ul li {
+  margin: 0 15px;
+}
+#sub-nav ul li a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  line-height: 50px;
+  font-size: 15px;
+  box-sizing: border-box;
+  transition: .5s;
+  font-weight: 300;
+}
+#sub-nav ul li a:hover {
+  color: tomato;
+}
+
+/* 갤러리섹션 */
+#gallerys_wrap {
+  width: 100%;
+  margin-top: 30px;
+}
+#gallerys_wrap .box {
+  position: relative;
+}
+#gallerys_wrap .box .photobox {
+  float: left;
+  left: 0;
+  margin-right: 15px;
+  padding: 0 5px;
+}
+#gallerys_wrap .box .photobox:first-child {
+  margin-left: 10px;
+}
+#gallerys_wrap .box .photobox:last-child {
+  margin-right: 0;
+}
+#gallerys_wrap .box .photobox p:nth-child(2) {
+  font-size: 16px;
+  font-weight: bold;
+}
+#gallerys_wrap .box .photobox p:nth-child(3) {
+  font-size: 14px;
+  color: #9e9e9e;
+}
+
+#gallerys_wrap img:hover {
+  opacity: 70%;
+}
