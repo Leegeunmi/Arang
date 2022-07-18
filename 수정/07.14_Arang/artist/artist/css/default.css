@@ -1,0 +1,33 @@
+@charset "UTF-8";
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #eae9e9;
+  color: #2e2e2e;
+}
+
+html, body, p, dl, dt, dd, ul, li, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #2e2e2e;
+  transition: 0.5s;
+}
+
+a:hover {
+  color: tomato;
+}
+
+.side_menu li a img {
+  width: 15px;
+  height: 15px;
+}
