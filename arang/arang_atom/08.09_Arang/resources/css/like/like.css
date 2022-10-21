@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+.container {
+  padding-bottom: 200px;
+}
+
+.sub_title {
+  padding-top: 130px;
+}
+
+.list_name {
+  font-family: 'Bebas Neue', cursive;
+  font-weight: nomal;
+  font-size: 21px;
+  /* border-bottom: 1px solid #333;
+  border-width: 20%; */
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.list_name.gallery {
+  margin-top: 55px;
+}
+
+.like img {
+  width: 19px;
+}
+
+.slick_trak.mypage .item {
+  margin-right: 20px;
+}
+
+.item .artwork_wrap.like {
+  width: 218px;
+  height: 218px;
+  position: relative;
+}
+
+.item .artwork_wrap.like img {
+  padding: 0px;
+}
+
+button.like.artwork_like {
+  position: absolute;
+  top: 17px;
+  right: 15px;
+}

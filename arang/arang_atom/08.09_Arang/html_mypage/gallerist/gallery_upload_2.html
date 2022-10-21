@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>갤러리상세업로드</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="../../resources/css/default/normalize.css">
+  <link rel="stylesheet" href="../../resources/css/default/default.css">
+  <link rel="stylesheet" href="../../resources/css/default/header.css">
+  <link rel="stylesheet" href="../../resources/css/artist/artist_focus.css">
+  <link rel="stylesheet" href="../../resources/css/gallery/gallery_focus.css">
+  <link rel="stylesheet" href="../../resources/css/mypage/artwork_upload.css">
+  <link rel="stylesheet" href="../../resources/css/mypage/gallery_upload.css">
+</head>
+
+<body>
+  <div id="wrap">
+    <header id="header">
+      <div class="inner">
+        <!-- 로고 -->
+        <h1 id="top-logo">
+          <a href="../../html_main/main.html">ARANG</a>
+        </h1>
+        <!-- 메인메뉴 -->
+        <nav id="top-nav">
+          <ul class="center_menu">
+            <li><a href="../../html_artist/artist.html">Artists</a></li>
+            <li><a href="../../html_gallery/gallery.html">Gallerys</a></li>
+            <li><a href="../../html_exhibition/exhibition.html">Exhibitions</a></li>
+            <li><a href="../../html_storage/storage.html">Storage</a></li>
+            <li><a href="./notice/notice.html">Notice</a></li>
+          </ul>
+          <ul class="side_menu">
+            <li><a href="./find/find.html"><img src="../../resources/img/icon/find.png" alt="find"></a></li>
+            <li><a href="../../html_mypage/artist/artist_mypage.html"><img src="../../resources/img/icon/mypage.png" alt="mypage"></a></li>
+            <li><a href="../../html_like/like.html"><img src="../../resources/img/icon/like.png" alt="like"></a></li>
+            <li><a href="./cart/cart.html"><img src="../../resources/img/icon/cart.png" alt="cart"></a></li>
+            <li><a href="../../html_login/login.html">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="headline">
+      <h3>GALLERY PAGE</h3>
+    </div>
+
+    <!-- 갤러리상세페이지 -->
+    <div id="notice">
+      <div id="notice_detail">
+        <div class="container">
+          <div class="detail_wrapper d-flex">
+            <div class="content_block">
+              <div class="review">
+                <p>제목</p>
+                <form:input path="title" class="title" type="text" size="100" maxlength="100" />
+                <p><input type="text"></p>
+                <input type="hidden" value="${noticeCommand.writer}">
+                <p>내용</p>
+                <p><textarea class="textarea_box" placeholder="갤러리 소개" cols="43" rows="7"></textarea></p>
+                <form:textarea path="content" class="content" cols="100" rows="100" />
+                <p><br></p>
+              </div>
+            </div>
+          </div>
+          <div class="btn_group2">
+            <button type="submit" class="btn2">등록</button>
+            <button type="button" onclick="gomain()" class="btn2">취소</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

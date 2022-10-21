@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/default.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>notice_list</title>
+</head>
+
+<body>
+  <!-- header -->
+  <div id="wrap">
+    <header id="header">
+      <div class="inner">
+        <!-- 로고 -->
+        <h1 id="top-logo">
+          <a href="index.html">ARANG</a>
+        </h1>
+        <!-- 메인메뉴 -->
+        <nav id="top-nav">
+          <ul class="center_menu">
+            <li><a href="./artists/all.html">Artists</a></li>
+            <li><a href="./gallerys/gallerys.html">Gallerys</a></li>
+            <li><a href="./exhibitions/exhibitions.html">Exhibitions</a></li>
+            <li><a href="./storage/storage.html">Storage</a></li>
+            <li><a href="./notice/notice.html">Notice</a></li>
+          </ul>
+          <ul class="side_menu">
+            <li><a href="./find/find.html"><img src="./img/icon/find.png" alt="find"></a></li>
+            <li><a href="./mypage/mypage.html"><img src="./img/icon/mypage.png" alt="mypage"></a></li>
+            <li><a href="./like/like.html"><img src="./img/icon/like.png" alt="like"></a></li>
+            <li><a href="./cart/cart.html"><img src="./img/icon/cart.png" alt="cart"></a></li>
+            <li><a href="./login/login.html">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="board_wrapper">
+      <h3 class="board_top">Notice</h3>
+      <div>
+        <form method="post" action="searchedBbs.do">
+          <fieldset>
+            <div class="field_inner">
+              <label>검색 분류</label>
+              <select name="f">
+                <option value="bTitle">제목</option>
+                <option value="bName">작성자</option>
+              </select>
+              <label>검색어</label>
+              <input type="text" name="q" value="${param.q}" />
+              <input type="submit" value="검색" />
+              <a href="/medici/write_view.do"><button type="button">글쓰기</button></a>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+
+      <table class="notice_list">
+        <tr>
+          <td>No.</td>
+          <td>이름</td>
+          <td>제목</td>
+          <td>날짜</td>
+          <td>조회</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>김규범</td>
+          <td>SETEC컨벤션센터 문의</td>
+          <td>2022-07-18</td>
+          <td>5</td>
+        </tr>
+
+        <c:forEach items="${list}" var="dto">
+          <tr>
+            <td>${dto.bId}</td>
+            <td>${dto.bName}</td>
+            <td>
+              <c:forEach begin="1" end="${dto.bIndent}"></c:forEach>
+              <a href="view.do?bId=${dto.bId}">${dto.bTitle}</a>
+            </td>
+            <td>${dto.bDate}</td>
+            <td>${dto.bHit}</td>
+          </tr>
+        </c:forEach>
+      </table>
+
+    </div>
+  </div>
+</body>
+
+</html>

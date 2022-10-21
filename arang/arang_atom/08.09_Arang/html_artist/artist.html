@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>아티스트페이지</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="../resources/css/default/normalize.css">
+  <link rel="stylesheet" href="../resources/css/default/default.css">
+  <link rel="stylesheet" href="../resources/css/default/header.css">
+  <link rel="stylesheet" href="../resources/css/artist/artist.css">
+  <script type="text/javascript" src="../resources/js/common.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <header id="header">
+      <div class="inner">
+        <!-- 로고 -->
+        <h1 id="top-logo">
+          <a href="../html_main/main.html">ARANG</a>
+        </h1>
+        <!-- 메인메뉴 -->
+        <nav id="top-nav">
+          <ul class="center_menu">
+            <li><a href="./artist.html">Artists</a></li>
+            <li><a href="../html_gallery/gallery.html">Gallerys</a></li>
+            <li><a href="../html_exhibition/exhibition.html">Exhibitions</a></li>
+            <li><a href="../html_storage/storage.html">Storage</a></li>
+            <li><a href="./notice/notice.html">Notice</a></li>
+          </ul>
+          <ul class="side_menu">
+            <li><a href="./find/find.html"><img src="../resources/img/icon/find.png" alt="find"></a></li>
+            <li><a href="../html_mypage/artist/artist_mypage.html"><img src="../resources/img/icon/mypage.png" alt="mypage"></a></li>
+            <li><a href="../html_like/like.html"><img src="../resources/img/icon/like.png" alt="like"></a></li>
+            <li><a href="./cart/cart.html"><img src="../resources/img/icon/cart.png" alt="cart"></a></li>
+            <li><a href="../html_login/login.html">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="headline">
+      <h3>ARTISTS</h3>
+      <nav id="sub-nav">
+        <ul>
+          <li><a href="./artist.html">All</a></li>
+          <li><a href="./artists/Sculptor.html">Sculptor</a></li>
+          <li><a href="./artists/Painter.html">Painter</a></li>
+          <li><a href="./artists/OrientalPainter.html">OrientalPainter</a></li>
+          <li><a href="./artists/DrawingArtist.html">DrawingArtist</a></li>
+          <li><a href="./artists/Illustator.html">Illustator</a></li>
+          <li><a href="./artists/DigitalArtist.html">DigitalArtist</a></li>
+          <li><a href="./artists/Photographer.html">Photographer</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- 이달의 작가 -->
+    <div id="artist">
+      <form id="artist_form">
+        <div class="container">
+          <div class="sub_page_top">
+            <h5 class="sub_title">Artist of the month</h5>
+            <div class="row">
+              <div class="col_wrap">
+                <div class="col col-1">
+                  <div class="artist_info month_artist d-flex flex-row">
+                    <div class="artist_avatar">
+                      <a href="./artist_focus.html"><img src="../resources/img/윤라희/윤라희.jpg" alt="윤라희jpg"></a>
+                    </div>
+                    <div class="artist_text">
+                      <div class="first">
+                        <span>윤라희</span>
+                        <span class="futuraM">Yoon, Ra Hee</span>
+                        <span class="genre_tag">Sculptor</span>
+                      </div>
+                      <div class="second d-flex flex-row">
+                        <div>날 것 그대로의 본질에 우연적 효과를 불어넣다.</div>
+                        <button onclick="toggleImg()" class="like"><img id="img" src="../resources/img/icon/like.png" alt="like"></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row artwork_wrap">
+                    <div class="col">
+                      <div class="artwork_wrap">
+                        <a href="../html_artwork/artwork_focus.html"><img class="artwork" src="../resources/img/윤라희/윤라희-오브제1_s02.jpg" alt="오브제1" onload="JavaScript:artwork_small(this)"></a>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="artwork_wrap">
+                        <a href="#"><img class="artwork" src="../resources/img/윤라희/윤라희-오브제2_s01_fub8Yrj.jpg" alt="오브제2" onload="JavaScript:artwork_small(this)"></a>
+                        <!-- <a href="#"><img class="artwork" src="../resources/img/testImg.jpg" alt="오브제2" onload="JavaScript:artwork_small(this)"></a> -->
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="artwork_wrap">
+                        <a href="#"><img class="artwork" src="../resources/img/윤라희/윤라희-오브제3_s01_gpLUosS.jpg" alt="오브제3" onload="JavaScript:artwork_small(this)"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col_wrap">
+                <div class="col col-2">
+                  <div class="artist_info month_artist d-flex flex-row">
+                    <div class="artist_avatar">
+                      <a href="#"><img src="../resources/img/김효원/김효원.jpg" alt="김효원jpg"></a>
+                    </div>
+                    <div class="artist_text">
+                      <div class="first">
+                        <span>김효원</span>
+                        <span class="futuraM">Kim, Hyo Won </span>
+                        <span class="genre_tag">Painter</span>
+                      </div>
+                      <div class="second d-flex flex-row">
+                        <div>도시정원</div>
+                        <button class="like"><img src="../resources/img/icon/like.png" alt="like"></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row artwork_wrap">
+                    <div class="col">
+                      <a href="#"><img class="artwork" src="../resources/img/김효원/painting_1.jpg" alt="painting_1" onload="JavaScript:artwork_small(this)"></a>
+                    </div>
+                    <div class="col">
+                      <a href="#"><img class="artwork" src="../resources/img/김효원/painting_2.jpg" alt="painting_2" onload="JavaScript:artwork_small(this)"></a>
+                    </div>
+                    <div class="col">
+                      <a href="#"><img class="artwork" src="../resources/img/김효원/painting_3.jpg" alt="painting_3" onload="JavaScript:artwork_small(this)"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 아티스트 -->
+          <div class="sub_page_context">
+            <div class="grid_wrapper">
+              <h5 class="sub_title">Artists<small>176</small></h5>
+              <div class="row artist_list">
+                <div class="col artist_item">
+                  <div class="artist_info d-flex flex-row">
+                    <div class="artist_avatar">
+                      <a href="#"><img src="../resources/img/이우준/이우준.jpg" alt="이우준jpg"></a>
+                    </div>
+                    <div class="artist_text">
+                      <div class="first">
+                        <span>이우준</span>
+                        <span class="futuraM">Lee, Woo Joon</span>
+                        <span class="genre_tag">Photographer</span>
+                      </div>
+                      <div class="second d-flex flex-row">
+                        <div>자연과 빌딩의 대조로 나타낸 우리 사회의 모습</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="banner_wrap">
+                    <a href="#">
+                      <div class="artwork_banner">
+                        <img src="../resources/img/이우준/photo_1.jpg" alt="photo_1">
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col artist_item">
+                  <div class="artist_info d-flex flex-row">
+                    <div class="artist_avatar">
+                      <a href="#"><img src="../resources/img/안서희/안서희.jpg" alt="안서희jpg"></a>
+                    </div>
+                    <div class="artist_text">
+                      <div class="first">
+                        <span>안서희</span>
+                        <span class="futuraM">An, Seo Hee</span>
+                        <span class="genre_tag">Sculptor</span>
+                      </div>
+                      <div class="second d-flex flex-row">
+                        <div>바다, 현실 세계와 이상 세계를 잇다</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="banner_wrap">
+                    <a href="#">
+                      <div class="artwork_banner">
+                        <img src="../resources/img/안서희/1_s1.jpg" alt="작품1">
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col artist_item">
+                  <div class="artist_info d-flex flex-row">
+                    <div class="artist_avatar">
+                      <a href="#"><img src="../resources/img/서희수/서희수.jpg" alt="서희수jpg"></a>
+                    </div>
+                    <div class="artist_text">
+                      <div class="first">
+                        <span>서희수</span>
+                        <span class="futuraM">Suh, Hee Su</span>
+                        <span class="genre_tag">Sculptor</span>
+                      </div>
+                      <div class="second d-flex flex-row">
+                        <div>단련과 치유의 과정을 견뎌낸 견고한 아름다움</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="banner_wrap">
+                    <a href="#">
+                      <div class="artwork_banner">
+                        <img src="../resources/img/서희수/서희수-가로_s02.jpg" alt="가로_s02">
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col artist_item">
+                  <div class="artist_info d-flex flex-row">
+                    <div class="artist_avatar">
+                      <a href="#"><img src="../resources/img/김선/김선.jpg" alt="김선jpg"></a>
+                    </div>
+                    <div class="artist_text">
+                      <div class="first">
+                        <span>김선</span>
+                        <span class="futuraM">Kim, sun</span>
+                        <span class="genre_tag">Painter</span>
+                      </div>
+                      <div class="second d-flex flex-row">
+                        <div>우아한 달항아리의 미학</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="banner_wrap">
+                    <a href="#">
+                      <div class="artwork_banner">
+                        <img src="../resources/img/김선/painting_1.jpg" alt="painting_1">
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col artist_item">
+                  <div class="artist_info d-flex flex-row">
+                    <div class="artist_avatar">
+                      <a href="#"><img src="../resources/img/김보희/김보희.jpg" alt="김보희"></a>
+                    </div>
+                    <div class="artist_text">
+                      <div class="first">
+                        <span>김보희</span>
+                        <span class="futuraM">Kim, Bo Hei</span>
+                        <span class="genre_tag">Painter</span>
+                      </div>
+                      <div class="second d-flex flex-row">
+                        <div>모성애를 담은 자연</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="banner_wrap">
+                    <a href="#">
+                      <div class="artwork_banner">
+                        <img src="../resources/img/김보희/3.jpg">
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col artist_item">
+                  <div class="artist_info d-flex flex-row">
+                    <div class="artist_avatar">
+                      <a href="#"><img src="../resources/img/김귀연/김귀연.jpg" alt="김귀연"></a>
+                    </div>
+                    <div class="artist_text">
+                      <div class="first">
+                        <span>김귀연</span>
+                        <span class="futuraM">Kim, gui yeon</span>
+                        <span class="genre_tag">Sculptor</span>
+                        <span class="genre_tag">Painter</span>
+                      </div>
+                      <div class="second d-flex flex-row">
+                        <div>간절히 바라고 기도하듯</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="banner_wrap">
+                    <a href="#">
+                      <div class="artwork_banner">
+                        <img src="../resources/img/김귀연/work1.jpg" alt="work1">
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col artist_item">
+                  <div class="artist_info d-flex flex-row">
+                    <div class="artist_avatar">
+                      <a href="#"><img src="../resources/img/김란희/김란희.jpg" alt="김란희"></a>
+                    </div>
+                    <div class="artist_text">
+                      <div class="first">
+                        <span>김란희</span>
+                        <span class="futuraM">Kim, Ran Hee</span>
+                        <span class="genre_tag">Painter</span>
+                      </div>
+                      <div class="second d-flex flex-row">
+                        <div>감성으로 충만한 빛의 체험</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="banner_wrap">
+                    <a href="#">
+                      <div class="artwork_banner">
+                        <img src="../resources/img/김란희/work1.jpg" alt="work1">
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col artist_item">
+                  <div class="artist_info d-flex flex-row">
+                    <div class="artist_avatar">
+                      <a href="#"><img src="../resources/img/윤라희/윤라희.jpg" alt="윤라희jpg"></a>
+                    </div>
+                    <div class="artist_text">
+                      <div class="first">
+                        <span>윤라희</span>
+                        <span class="futuraM">Yoon, Ra Hee</span>
+                        <span class="genre_tag">Sculptor</span>
+                      </div>
+                      <div class="second d-flex flex-row">
+                        <div>날 것 그대로의 본질에 우연적 효과를 불어넣다.</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="banner_wrap">
+                    <a href="#">
+                      <div class="artwork_banner">
+                        <img src="../resources/img/윤라희/윤라희-오브제1_s02.jpg" alt="오브제1">
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col artist_item">
+                  <div class="artist_info d-flex flex-row">
+                    <div class="artist_avatar">
+                      <a href="#"><img src="../resources/img/추혜인/추혜인.jpg" alt="추혜인jpg"></a>
+                    </div>
+                    <div class="artist_text">
+                      <div class="first">
+                        <span>추혜인</span>
+                        <span class="futuraM">Choo, Hye In</span>
+                        <span class="genre_tag">Painter</span>
+                      </div>
+                      <div class="second d-flex flex-row">
+                        <div>즐거움과 희망에 대한 유희</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="banner_wrap">
+                    <a href="#">
+                      <div class="artwork_banner">
+                        <img src="../resources/img/추혜인/ladygaga_s01.jpg" alt="ladygaga_s01">
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="toolbox">
+                <ul class="pagination">
+                  <li class="page_item disabled">
+                    <a class="page_link_btn" href="#"><i class="go_left"><<</i></a>
+                  </li>
+                  <li class="page_item">
+                    <a class="page_link" href="#">1</a>
+                  </li>
+                  <li class="page_item">
+                    <a class="page_link" href="#">2</a>
+                  </li>
+                  <li class="page_item">
+                    <a class="page_link" href="#">3</a>
+                  </li>
+                  <li class="page_item">
+                    <a class="page_link" href="#">...</a>
+                  </li>
+                  <li class="page_item">
+                    <a class="page_link" href="#">7</a>
+                  </li>
+                  <li class="page_item disabled">
+                    <a class="page_link_btn" href="#"><i class="go_right">>></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </form>
+    </div>
+
+  </div>
+</body>
+
+</html>

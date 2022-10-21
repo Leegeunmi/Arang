@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/* external css: flickity.css */
+
+.carousel {
+  width: 652px;
+}
+
+.carousel-cell {
+  width: 200px;
+  height: 200px;
+  margin-right: 20px;
+  /* background: #8C8; */
+  counter-increment: carousel-cell;
+}
+
+.carousel-cell.is-selected {
+  /* background: #ED2; */
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+.flickity-page-dots {
+  display: none;
+}
+
+.flickity-button {
+  background: none;
+}
+
+.flickity-button:hover {
+  background: none;
+}

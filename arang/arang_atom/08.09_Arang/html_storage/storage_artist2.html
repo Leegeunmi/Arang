@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>스토리지-아티스트</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="../resources/css/default/normalize.css">
+  <link rel="stylesheet" href="../resources/css/default/default.css">
+  <link rel="stylesheet" href="../resources/css/default/header.css">
+  <link rel="stylesheet" href="../resources/css/storage/storage_list.css">
+</head>
+
+<body>
+  <!-- header -->
+  <div id="wrap">
+    <header id="header">
+      <div class="inner">
+        <!-- 로고 -->
+        <h1 id="top-logo">
+          <a href="../html_main/main.html">ARANG</a>
+        </h1>
+        <!-- 메인메뉴 -->
+        <nav id="top-nav">
+          <ul class="center_menu">
+            <li><a href="../html_artist/artist.html">Artists</a></li>
+            <li><a href="../html_gallery/gallery.html">Gallerys</a></li>
+            <li><a href="../html_exhibition/exhibition.html">Exhibitions</a></li>
+            <li><a href="../html_storage/storage.html">Storage</a></li>
+            <li><a href="./notice/notice.html">Notice</a></li>
+          </ul>
+          <ul class="side_menu">
+            <li><a href="./find/find.html"><img src="../resources/img/icon/find.png" alt="find"></a></li>
+            <li><a href="../html_mypage/artist/artist_mypage.html"><img src="../resources/img/icon/mypage.png" alt="mypage"></a></li>
+            <li><a href="../html_like/like.html"><img src="../resources/img/icon/like.png" alt="like"></a></li>
+            <li><a href="./cart/cart.html"><img src="../resources/img/icon/cart.png" alt="cart"></a></li>
+            <li><a href="../html_login/login.html">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="board_wrapper">
+      <table class="storage_list artist">
+        <c:forEach var="findOne" items="${noticeFindOne}">
+          <tr>
+            <td><strong>No.</strong> ${findOne.num}</td>
+            <td><strong>작성일</strong> ${findOne.regDate}</td>
+            <td><strong>작성자</strong> ${findOne.writer}</td>
+            <td><strong>조회</strong> ${findOne.readCnt}</td>
+          </tr>
+      </table>
+      <div class="review">
+        <p>제목</p>
+        ${findOne.title}
+        <p><input type="text"></p>
+        <input type="hidden" value="${noticeCommand.writer}">
+        <p>내용</p>
+        ${findOne.content}
+        <p><br></p>
+      </div>
+      </c:forEach>
+      <div class="btn_group2">
+        <button type="submit" onclick="goupdate()" class="btn2">수정</button>
+        <button type="button" onclick="godelete()" class="btn2">삭제</button>
+        <button type="button" onclick="gomain()" class="btn2">취소</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

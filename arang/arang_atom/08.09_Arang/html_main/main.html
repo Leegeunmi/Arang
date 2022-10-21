@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>메인</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="../resources/css/default/normalize.css">
+  <link rel="stylesheet" href="../resources/css/default/default.css">
+  <link rel="stylesheet" href="../resources/css/default/header.css">
+  <link rel="stylesheet" href="../resources/css/artist/artist.css">
+  <link rel="stylesheet" href="../resources/css/main/main.css">
+  <script type="text/javascript" src="../resources/js/jquery.js"></script>
+  <script type="text/javascript" src="../resources/js/slidebanner.js"></script>
+  <script type="text/javascript" src="..//resources/js/common.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <header id="header">
+      <div class="inner">
+        <!-- 로고 -->
+        <h1 id="top-logo">
+          <a href="./main.html">ARANG</a>
+        </h1>
+        <!-- 메인메뉴 -->
+        <nav id="top-nav">
+          <ul class="center_menu">
+            <li><a href="../html_artist/artist.html">Artists</a></li>
+            <li><a href="../html_gallery/gallery.html">Gallerys</a></li>
+            <li><a href="../html_exhibition/exhibition.html">Exhibitions</a></li>
+            <li><a href="../html_storage/storage.html">Storage</a></li>
+            <li><a href="./notice/notice.html">Notice</a></li>
+          </ul>
+          <ul class="side_menu">
+            <li><a href="./find/find.html"><img src="../resources/img/icon/find.png" alt="find"></a></li>
+            <!-- <li><a href="../html_mypage/artist/artist_mypage.html"><img src="../resources/img/icon/mypage.png" alt="mypage"></a></li> -->
+            <li><a href="../html_mypage/gallerist/gallerist_mypage.html"><img src="../resources/img/icon/mypage.png" alt="mypage"></a></li>
+            <li><a href="../html_like/like.html"><img src="../resources/img/icon/like.png" alt="like"></a></li>
+            <li><a href="./cart/cart.html"><img src="../resources/img/icon/cart.png" alt="cart"></a></li>
+            <li><a href="../html_login/login.html">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+    <!-- 작품섹션(슬라이드배너) -->
+    <div class="headline top">
+      <p>Promising artworks</p>
+      <p>Look at the amazing artworks of the new artists of the month.</P>
+    </div>
+    <div id="slidebanner">
+      <div id="carousel-wrap">
+        <p id="carousel-prev" class="button"><img src="../resources/img/artworks/btn_prev.png" alt="prev"></p>
+        <p id="carousel-next" class="button"><img src="../resources/img/artworks/btn_next.png" alt="next"></p>
+        <div id="carousel">
+          <!--화면에 보여지는 영역-->
+          <div id="carousel-inner">
+            <!-- li*4>a[href="#"]>img[src=./img/photo$_thum.jpg] -->
+            <ul class="column">
+              <li><a href="#"><img src="../resources/img/artworks/1.png" alt=""></a></li>
+              <li><a href="#"><img src="../resources/img/artworks/2.png" alt=""></a></li>
+              <li><a href="#"><img src="../resources/img/artworks/3.png" alt=""></a></li>
+              <li><a href="#"><img src="../resources/img/artworks/4.png" alt=""></a></li>
+              <li><a href="#"><img src="../resources/img/artworks/5.png" alt=""></a></li>
+              <li><a href="#"><img src="../resources/img/artworks/6.png" alt=""></a></li>
+              <li><a href="#"><img src="../resources/img/artworks/7.png" alt=""></a></li>
+              <li><a href="#"><img src="../resources/img/artworks/1.png" alt=""></a></li>
+              <li><a href="#"><img src="../resources/img/artworks/2.png" alt=""></a></li>
+              <li><a href="#"><img src="../resources/img/artworks/3.png" alt=""></a></li>
+              <li><a href="#"><img src="../resources/img/artworks/4.png" alt=""></a></li>
+              <li><a href="#"><img src="../resources/img/artworks/5.png" alt=""></a></li>
+              <li><a href="#"><img src="../resources/img/artworks/6.png" alt=""></a></li>
+              <li><a href="#"><img src="../resources/img/artworks/7.png" alt=""></a></li>
+              <!-- <li><a href="#"><img src="./img/photo15_thum.jpg" alt=""></a></li>
+              <li><a href="#"><img src="./img/photo16_thum.jpg" alt=""></a></li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 아티스트섹션 -->
+    <div id="artist">
+      <form id="artist_form">
+        <div class="container artists">
+          <div class="sub_page_top">
+            <div class="headline">
+              <p>Artist of the month</p>
+              <p>Artist of the month! Look at their artworks.</P>
+            </div>
+            <div class="row">
+              <div class="col_wrap">
+                <div class="col col-1">
+                  <div class="artist_info month_artist d-flex flex-row">
+                    <div class="artist_avatar">
+                      <a href="../html_artist/artist_focus.html"><img src="../resources/img/윤라희/윤라희.jpg" alt="윤라희jpg"></a>
+                    </div>
+                    <div class="artist_text">
+                      <div class="first">
+                        <span>윤라희</span>
+                        <span class="futuraM">Yoon, Ra Hee</span>
+                        <span class="genre_tag">Sculptor</span>
+                      </div>
+                      <div class="second d-flex flex-row">
+                        <div>날 것 그대로의 본질에 우연적 효과를 불어넣다.</div>
+                        <button class="like"><img src="../resources/img/icon/like.png" alt="like"></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row artwork_wrap">
+                    <div class="col">
+                      <a href="../html_artwork/artwork_focus.html"><img class="artwork" src="../resources/img/윤라희/윤라희-오브제1_s02.jpg" alt="오브제1" onload="JavaScript:artwork_small(this)"></a>
+                    </div>
+                    <div class="col">
+                      <a href="#"><img class="artwork" src="../resources/img/윤라희/윤라희-오브제2_s01_fub8Yrj.jpg" alt="오브제2" onload="JavaScript:artwork_small(this)"></a>
+                    </div>
+                    <div class="col">
+                      <a href="#"><img class="artwork" src="../resources/img/윤라희/윤라희-오브제3_s01_gpLUosS.jpg" alt="오브제3" onload="JavaScript:artwork_small(this)"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col_wrap">
+                <div class="col col-2">
+                  <div class="artist_info month_artist d-flex flex-row">
+                    <div class="artist_avatar">
+                      <a href="#"><img src="../resources/img/김효원/김효원.jpg" alt="김효원jpg"></a>
+                    </div>
+                    <div class="artist_text">
+                      <div class="first">
+                        <span>김효원</span>
+                        <span class="futuraM">Kim, Hyo Won </span>
+                        <span class="genre_tag">Painter</span>
+                      </div>
+                      <div class="second d-flex flex-row">
+                        <div>도시정원</div>
+                        <button class="like"><img src="../resources/img/icon/like.png" alt="like"></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row artwork_wrap">
+                    <div class="col">
+                      <a href="#"><img class="artwork" src="../resources/img/김효원/painting_1.jpg" alt="painting_1" onload="JavaScript:artwork_small(this)"></a>
+                    </div>
+                    <div class="col">
+                      <a href="#"><img class="artwork" src="../resources/img/김효원/painting_2.jpg" alt="painting_2" onload="JavaScript:artwork_small(this)"></a>
+                    </div>
+                    <div class="col">
+                      <a href="#"><img class="artwork" src="../resources/img/김효원/painting_3.jpg" alt="painting_3" onload="JavaScript:artwork_small(this)"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- 전시섹션 -->
+    <div class="headline">
+      <p>EXHIBITIONS</p>
+      <p>Enjoy the exhibition of artists!</P>
+    </div>
+    <div class="exhibition">
+      <div class="exhibition_wrapper">
+        <div class="exhibition_view">
+          <div class="img_wrapper">
+            <a href="../html_exhibition/exhibition_focus.html"><img src="../resources/img/exhibition/exhibition2.jpg" alt="exhibition2"></a>
+          </div>
+          <p>김보희 개인전</p>
+          <p class="date">2022.08.20~09.20</p>
+        </div>
+        <div class="exhibition_view">
+          <div class="img_wrapper">
+            <a href="../html_exhibition/exhibition.html"><img src="../resources/img/exhibition/exhibition1.jpg" alt="exhibition1"></a>
+          </div>
+          <p>He was Just a funny Boy</p>
+          <p class="date">2022.08.20~09.20</p>
+        </div>
+        <div class="exhibition_view">
+          <div class="img_wrapper">
+            <a href="../html_exhibition/exhibition.html"><img src="../resources/img/exhibition/exhibition3.jpg" alt="exhibition3"></a>
+          </div>
+          <p>유영국 개인전</p>
+          <p class="date">2022.08.20~09.20</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 갤러리섹션 -->
+    <div class="headline gallery">
+      <p>GALLERYS</p>
+      <p>The best place for artists and people to communicate through their artworks.</P>
+    </div>
+    <div id="artist">
+      <form id="artist_form">
+        <div class="container gallerys">
+          <!-- 아티스트 -->
+          <div class="sub_page_context">
+            <div class="grid_wrapper">
+              <div class="row artist_list">
+                <div class="col artist_item">
+                  <div class="artist_info d-flex flex-row">
+                    <div class="artist_avatar">
+                      <a href="../html_gallery/gallery_focus.html"><img src="../resources/img/gallerys/g1.png" alt="g1"></a>
+                    </div>
+                    <div class="artist_text">
+                      <div class="first">
+                        <span>ARARIO Gallery</span>
+                      </div>
+                      <div class="second d-flex flex-row">
+                        <div>Jongno-gu,Seoul</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="banner_wrap">
+                    <a href="#">
+                      <div class="artwork_banner">
+                        <a href="../html_gallery/gallery_focus.html"><img src="../resources/img/gallerys/2.jpg" alt="2"></a>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col artist_item">
+                  <div class="artist_info d-flex flex-row">
+                    <div class="artist_avatar">
+                      <a href="#"><img src="../resources/img/gallerys/제주현대미술관2.jpg"></a>
+                    </div>
+                    <div class="artist_text">
+                      <div class="first">
+                        <span>Jeju museum of contemporary art</span>
+                      </div>
+                      <div class="second d-flex flex-row">
+                        <div>Hangyeong-myeon, Jeju-do</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="banner_wrap">
+                    <a href="#">
+                      <div class="artwork_banner">
+                        <img src="../resources/img/gallerys/제주현대미술관.jpg">
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col artist_item">
+                  <div class="artist_info d-flex flex-row">
+                    <div class="artist_avatar">
+                      <a href="#"><img src="../resources/img/gallerys/g2.png" alt="g2"></a>
+                    </div>
+                    <div class="artist_text">
+                      <div class="first">
+                        <span>Baudoin Lebon</span>
+                      </div>
+                      <div class="second d-flex flex-row">
+                        <div>Jongno-gu,Seoul</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="banner_wrap">
+                    <a href="#">
+                      <div class="artwork_banner">
+                        <img src="../resources/img/gallerys/g2.png" alt="g2">
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

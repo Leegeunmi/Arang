@@ -1,0 +1,24 @@
+동성로갤러리 단체전 '삼삼하다'전
+수창아트센터 개인전
+서울아트페어 입상
+
+ArtistCommand {
+  private String career;
+  private String career1;
+  private String career2;
+  private String career3;
+}
+
+컨트롤러
+
+artistCommand.setCareer(artistCommand.getCareer1 + "/" + artistCommand.getCareer2 + "/" + artistCommand.getCareer3 ); 
+
+동성로갤러리 단체전 '삼삼하다'전/수창아트센터 개인전/서울아트페어 입상
+
+
+artistCommand[2] =null;
+
+
+C:\Users\Administrator\Desktop\수정\07.14_Arang\5갤러리페이지
+
+[c.user.adminst]

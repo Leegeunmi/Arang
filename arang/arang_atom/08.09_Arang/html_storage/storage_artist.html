@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>스토리지-아티스트</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="../resources/css/default/normalize.css">
+  <link rel="stylesheet" href="../resources/css/default/default.css">
+  <link rel="stylesheet" href="../resources/css/default/header.css">
+  <link rel="stylesheet" href="../resources/css/storage/storage_list.css">
+</head>
+
+<body>
+  <!-- header -->
+  <div id="wrap">
+    <header id="header">
+      <div class="inner">
+        <!-- 로고 -->
+        <h1 id="top-logo">
+          <a href="../html_main/main.html">ARANG</a>
+        </h1>
+        <!-- 메인메뉴 -->
+        <nav id="top-nav">
+          <ul class="center_menu">
+            <li><a href="../html_artist/artist.html">Artists</a></li>
+            <li><a href="../html_gallery/gallery.html">Gallerys</a></li>
+            <li><a href="../html_exhibition/exhibition.html">Exhibitions</a></li>
+            <li><a href="../html_storage/storage.html">Storage</a></li>
+            <li><a href="./notice/notice.html">Notice</a></li>
+          </ul>
+          <ul class="side_menu">
+            <li><a href="./find/find.html"><img src="../resources/img/icon/find.png" alt="find"></a></li>
+            <li><a href="../html_mypage/artist/artist_mypage.html"><img src="../resources/img/icon/mypage.png" alt="mypage"></a></li>
+            <li><a href="../html_like/like.html"><img src="../resources/img/icon/like.png" alt="like"></a></li>
+            <li><a href="./cart/cart.html"><img src="../resources/img/icon/cart.png" alt="cart"></a></li>
+            <li><a href="../html_login/login.html">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="board_wrapper">
+      <h3 class="sub_title">My Storage</h3>
+      <div>
+        <form>
+          <fieldset>
+            <div class="field_inner">
+              <label>검색어</label>
+              <input type="text">
+              <a href="#"><button class="board_btn" type="button">검색</button></a>
+              <a href="../html_storage/storage_service.html"><button class="board_btn service" type="button">작품보관신청</button></a>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+      <table class="storage_list artist">
+        <tr>
+          <td>No.</td>
+          <td>작품코드</td>
+          <td>지역</td>
+          <td>보관소</td>
+          <td>일정</td>
+          <td>운송</td>
+          <td>결제금액</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>A1205</td>
+          <td>서울</td>
+          <td>강남구 남부순환로 3104 SETEC컨벤션센터</td>
+          <td>2022-07-18 ~ 2022.07.25</td>
+          <td>YES</td>
+          <td>150,000</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>
+
+</html>

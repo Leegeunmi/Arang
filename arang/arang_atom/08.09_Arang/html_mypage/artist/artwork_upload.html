@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>아트워크페이지</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="../../resources/css/default/normalize.css">
+  <link rel="stylesheet" href="../../resources/css/default/default.css">
+  <link rel="stylesheet" href="../../resources/css/default/header.css">
+  <link rel="stylesheet" href="../../resources/css/artwork/artwork_focus.css">
+  <link rel="stylesheet" href="../../resources/css/mypage/artwork_upload.css">
+</head>
+
+<body>
+  <div id="wrap">
+    <header id="header">
+      <div class="inner">
+        <!-- 로고 -->
+        <h1 id="top-logo">
+          <a href="../../html_main/main.html">ARANG</a>
+        </h1>
+        <!-- 메인메뉴 -->
+        <nav id="top-nav">
+          <ul class="center_menu">
+            <li><a href="../../html_artist/artist.html">Artists</a></li>
+            <li><a href="../../html_gallery/gallery.html">Gallerys</a></li>
+            <li><a href="../../html_exhibition/exhibition.html">Exhibitions</a></li>
+            <li><a href="../../html_storage/storage.html">Storage</a></li>
+            <li><a href="./notice/notice.html">Notice</a></li>
+          </ul>
+          <ul class="side_menu">
+            <li><a href="./find/find.html"><img src="../../resources/img/icon/find.png" alt="find"></a></li>
+            <li><a href="../../html_mypage/artist/artist_mypage.html"><img src="../../resources/img/icon/mypage.png" alt="mypage"></a></li>
+            <li><a href="../../html_like/like.html"><img src="../../resources/img/icon/like.png" alt="like"></a></li>
+            <li><a href="./cart/cart.html"><img src="../../resources/img/icon/cart.png" alt="cart"></a></li>
+            <li><a href="../../html_login/login.html">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="headline">
+      <h3>ARTWORK UPLOAD</h3>
+      <div class="sub-txt">
+        작품 등록을 위해 아래 양식을 채워주세요!
+      </div>
+    </div>
+
+    <!-- 아트워크 상세 -->
+    <div id="artwork">
+      <div id="artwork_detail">
+        <div class="container">
+          <div class="artwork_simul">
+            <div class="artwork_wrapper">
+              <div class="artwork_view">
+                <div class="img_wrapper">
+                  <div class="paintings">
+                    <input type="file" id="input-file">
+                    <!-- <label class="input_file_btn big" for="input-file">작품이미지등록</label> -->
+                  </div>
+                </div>
+              </div>
+              <div class="artwork_info_wrap upload">
+                <div class="artwork_info">
+                  <h2><input type="text" placeholder="작품명"></h2>
+                  <div class="info">
+                    <div class="info_block">
+                      <div class="first">작가명(Name)</div>
+                      <div class="last">
+                        윤라희 Yoon, Ra Hee
+                      </div>
+                    </div>
+                    <div class="info_block">
+                      <div class="first">장르(Genre)</div>
+                      <div class="last">
+                        <select class="box">
+                          <option value=" ">장르선택</option>
+                          <option value="sculpture">조각(Sculpture)</option>
+                          <option value="paint">회화(Paint)</option>
+                          <option value="orientalPaint">회화(OrientalPaint)</option>
+                          <option value="drawing">소묘화(Drawing)</option>
+                          <option value="illustration">일러스트(Illustration)</option>
+                          <option value="digtalArt">디지털아트(DigtalArt)</option>
+                          <option value="photo">사진(Photo)</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="info_block">
+                      <div class="first">기법(Technique)</div>
+                      <input type="text" placeholder="ex) 아크릴(Acrylic)">
+                    </div>
+                    <div class="info_block">
+                      <div class="first">크기(Size)</div>
+                      <input type="text" placeholder="ex) 21x11cm">
+                    </div>
+                    <div class="info_block">
+                      <div class="first">년도(Year)</div>
+                      <input type="text" placeholder="ex) 2018">
+                    </div>
+                    <div class="info_block2">
+                      <div class="first">설명(Description)</div>
+                      <div class="last">
+                        <textarea placeholder="작품설명 300자 이내" cols="43" rows="7"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 상세 내용 -->
+          <section>
+            <div class="a_title">
+              <div class="first">
+                <input type="text" placeholder="ex) 물성을 살려 단순함을 끌어내는 것 (메인 타이틀)">
+              </div>
+              <div class="second">
+                <input type="text" placeholder="ex) 날 것 그대로의 본질에 우연적 효과를 불어넣다. (서브 타이틀)">
+              </div>
+            </div>
+            <div class="a_artwork">
+              <div class="upload_box">
+                <input type="file" id="input-file">
+              </div>
+              <div class="board_btn_wrap">
+                <button class="board_btn service" type="button">이미지 추가</button>
+                <button class="board_btn service" type="button">이미지 삭제</button>
+              </div>
+            </div>
+          </section>
+          <div class="btn_group2">
+            <a href="./artwork_checkpage.html"><button class="btn2">저장</button></a>
+            <a href="./artwork_checkpage.html"><button class="btn2">취소</button></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>

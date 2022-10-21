@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+/* 스토리지보드 */
+.board_wrapper input {
+  padding: 4px;
+}
+
+.board_wrapper {
+  display: inline-block;
+  width: 100%;
+  padding-top: 150px;
+}
+
+.board_wrapper h3 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 27px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.board_wrapper fieldset {
+  margin-bottom: 25px;
+}
+
+.board_wrapper fieldset .field_inner {
+  padding-top: 3px;
+  outline: none;
+}
+
+.board_wrapper table {
+  margin-top: 10px;
+  width: 100%;
+  border-collapse: collapse;
+}
+.board_wrapper table tr td {
+  border-bottom: 1px solid gray;
+  padding: 10px;
+}
+
+.board_wrapper table tr {
+  height: 30px;
+  font-size: 15px;
+}
+
+.board_btn.service {
+  border-radius: 0;
+  margin-left: 10px;
+  padding: 8px 20px;
+}
+
+.board_btn.service:hover {
+  background: tomato;
+}
+
+/* artist보드 */
+/* .board_wrapper.artist table tr td:nth-child(1) {
+  width: 5%;
+}
+
+.board_wrapper.artist table tr td:nth-child(2) {
+  width: 7%;
+}
+
+.board_wrapper.artist table tr td:nth-child(3) {
+  width: 8%;
+}
+
+.board_wrapper.artist table tr td:nth-child(4) {
+  width: 16%;
+}
+
+.board_wrapper.artist table tr td:nth-child(5) {
+  width: 12%;
+}
+
+.board_wrapper.artist table tr td:nth-child(6) {
+  width: 5%;
+}
+
+.board_wrapper.artist table tr td:nth-child(7) {
+  width: 7%;
+} */
+
+
+
+/* addmin보드 */
+/* .board_wrapper.addmin table tr:first-child {
+  font-weight: bold;
+}
+
+.board_wrapper.addmin table tr td:nth-child(1) {
+  width: 4%;
+}
+
+.board_wrapper.addmin table tr td:nth-child(2) {
+  width: 7%;
+}
+
+.board_wrapper.addmin table tr td:nth-child(3) {
+  width: 7%;
+}
+
+.board_wrapper.addmin table tr td:nth-child(4) {
+  width: 5%;
+}
+
+.board_wrapper.addmin table tr td:nth-child(5) {
+  width: 18%;
+}
+
+.board_wrapper.addmin table tr td:nth-child(6) {
+  width: 12%;
+}
+
+.board_wrapper.addmin table tr td:nth-child(7) {
+  width: 4%;
+}
+
+.board_wrapper.addmin table tr td:nth-child(8) {
+  width: 6%;
+} */

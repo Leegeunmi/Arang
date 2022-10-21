@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+.exhibition {
+  padding-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.exhibition_wrapper1 .first {
+  width: 1320px;
+}
+
+.info_txt {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.info_txt h3, .exhibition_wrapper3 h3 {
+  font-size: 50px;
+  margin-top: 70px;
+}
+
+.exhibition_wrapper3 h3 {
+  margin-top: 745px;
+}
+
+.info_txt .title, .exhibition_wrapper3 .title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.info_txt .date, .exhibition_wrapper3 .date {
+  margin-top: 10px;
+  margin-bottom: 85px;
+}
+
+.exhibition_wrapper3 .date {
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.info_txt .sub {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.exhibition_wrapper2, .exhibition_wrapper3  {
+  width: 1320px;
+  /* display: flex;
+  justify-content: space-between; */
+}
+
+.exhibition_wrapper2 img, .exhibition_wrapper3 img, .sub_box {
+  display: inline-block;
+}
+
+.sub_box {
+  padding-left: 25px;
+}
+
+.sub_box .sub:nth-child(1) {
+  font-weight: bold;
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+
+.sub_box .sub:nth-child(2) {
+  font-size: 15px;
+}
+
+.exhibition_wrapper3 img {
+  float: right;
+}
+
+.exhibition_wrapper3 .sub_box {
+  text-align: right;
+}
+
+.exhibition_wrapper3 .sub {
+  margin-left: 160px;
+}
+
+.exhibition_wrapper3, .exhibition_wrapper4 {
+  margin-top: 50px;
+}
+
+.exhibition_wrapper4 img {
+  width: 632px;
+  height: 632px;
+}
+
+.exhibition_wrapper4 img:nth-child(2) {
+  margin-left: 50px;
+}
+
+.work6 {
+  width: 1320px;
+  margin-top: 50px;
+}
+
+
+.exhibition_wrapper5 {
+  width: 1320px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #333;
+}
+
+.exhibition_wrapper5 .middle {
+  font-size: 30px;
+}
+
+.exhibition_wrapper5 .info_txt {
+  padding: 20px 95px;
+}
+
+.exhibition_wrapper5 .info_txt:nth-child(2) h3.middle {
+  margin-top: 0px;
+}
+
+.exhibition_wrapper5 .info_txt:nth-child(3) h3.middle {
+  margin-top: 80px;
+}
+
+/* artist / gallery정보  */
+#artist .sub_title {
+  display: inline-block;
+}
+
+.sub_title {
+  margin-top: 55px;
+}
