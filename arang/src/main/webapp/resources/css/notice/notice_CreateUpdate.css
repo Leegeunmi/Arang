@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/* 공지 작성, 수정페이지 */
+input {
+	background-color: #f5f5f5;
+}
+textarea {
+	outline: none;
+	border: none;
+	background-color: #f5f5f5;
+	width: 900px;
+}
+
+.container.notice {
+	padding-top: 0px;
+}
+
+.detail_wrapper.notice {
+	justify-content: center;
+}
+
+.detail_wrapper.notice .headline {
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+.sub_txt {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.review input{
+	padding: 4px 10px;
+	height: 25px;
+	width: 880px;
+}
+
+.sub_txt.inner {
+	margin-top: 20px;
+}
+
+#notice_textarea {
+	height: 300px;
+	padding: 10px;
+	width: 880px;
+	
+}

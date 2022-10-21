@@ -1,0 +1,41 @@
+ @charset "UTF-8";
+#table_wrap {
+	margin: 10%;
+ }
+ 
+#table_wrap h3 {
+	text-align: center;
+	margin-bottom: 5%;
+}
+ 
+table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+#table_wrap table:first-child {
+	margin-bottom: 5%;
+}
+
+th {
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #fff;
+}
+
+td {
+  padding: 15px;
+  text-align: left;
+  vertical-align: middle;
+  font-weight: 300;
+  font-size: 12px;
+  border-bottom: 1px solid #fff;
+}
+
+.total {
+	margin-top: 3%;
+	text-align: right;
+}

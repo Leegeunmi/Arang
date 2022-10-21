@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+body {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+input[type="file" i] {
+	align-items: center;
+}
+
+#body_wrap {
+	position: absolute;
+	margin-top: 300px;
+	text-align: left;
+}
+
+#body_wrap2 {
+	position: absolute;
+	margin-top: 350px;
+	text-align: left;
+}
+
+#body_wrap3 {
+	position: absolute;
+	margin-top: 400px;
+	text-align: left;
+}
+
+#body_wrap4 {
+	position: absolute;
+	margin-top: 500px;
+	text-align: left;
+}
+
+#body_wrap5 {
+	position: absolute;
+	margin-top: 800px;
+	text-align: left;
+}
+
+#body_wrap6 {
+	position: absolute;
+	margin-top: 600px;
+	text-align: left;
+}
+
+#body_wrap h3, #body_wrap2 h3, #body_wrap3 h3, #body_wrap4 h3, #body_wrap5 h3, #body_wrap6 h3 {
+	font-size: 2em;
+	font-weight: 700;
+}
+
+#sub_nav {
+	margin-top: 20px;
+}
+
+#sub_nav ul li {
+	margin: 10px 0px 10px 0px;
+}
+
+form.list_form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 10px 0 10px 0;
+	text-align: center;
+}
+
+form.list_form label:first-child {
+	margin-top: 20px;
+}
+
+form.list_form input {
+	margin: 5px 0 20px 0;
+}
+
+form.list_form select {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#cate_wrap1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+#cate_wrap2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 20px;
+}
+
+#cate_wrap2 ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#cate_wrap2 a {
+	margin-top: 5px;
+}
+
+
+

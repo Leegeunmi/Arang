@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+/*공지 메인 리스트 페이지*/
+#command{
+	width: 100%;
+	height: 60vh;
+}
+.theader{
+	display: inline-block;
+	height: 40px;
+	padding: 30px 0 30px 30px;
+}
+.theader .selectr{
+	width: 100%;
+	display: inline-block;
+	justify-content: center;
+	align-items: center;
+	background: #eee;
+}
+.theader .selectr .selectd{
+	display: inline-flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 40px;
+}
+.theader .selectr .selectd:nth-child(1){
+	width: 100px;
+}
+.theader .selectr .selectd:nth-child(2){
+	width: 550px;
+}
+.theader .selectr .selectd:nth-child(3){
+	width: 250px;
+}
+.theader .selectr .selectd:nth-child(4){
+	width: 100px;
+}
+.theader .selectr .selectd:nth-child(5){
+	width: 150px;
+}
+
+.tbodies{
+	width: 100%;
+	height: 450px;
+	display: inline-block;
+	padding-left: 30px;
+	text-align: center;
+}
+.tbodies .bodytd{
+	height: 40px;
+	display: inline-block;
+	justify-content: center;
+	align-items: center;
+}
+.tbodies .bodytd:nth-child(1){
+	width: 100px;
+}
+.tbodies .bodytd:nth-child(2){
+	width: 560px;
+}
+.tbodies .bodytd:nth-child(3){
+	width: 250px;
+}
+.tbodies .bodytd:nth-child(4){
+	width: 110px;
+}
+.tbodies .bodytd:nth-child(5){
+	width: 150px;
+}
+.tbodies .bodytd:nth-child(6){
+	width: 50px;
+}
+.tbodies .bodytd:nth-child(7){
+	width: 50px;
+}
+
+/* 공지 작성, 수정페이지 */
+button {
+  font-size: 11px;
+  border: none;
+  background-color: tomato;
+  color: white;
+  margin-bottom: 20px;
+  margin-top: 22px;
+}
+
+.container {
+  padding-top: 30px;
+  margin: 0 auto;
+}
+.container .detail_wrapper {
+	text-align: center;
+}
+
+.side_block{
+	padding: 30px 0;	
+}
+.btn_group2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*공지상세페이지*/
+.detail_wrapper{
+	padding-top: 50px;
+}
+
+/*페이지버튼*/
+
+.paging-area .pagination{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 50px;
+}
+.paging-area .pagination > li{
+	padding: 15px;
+}

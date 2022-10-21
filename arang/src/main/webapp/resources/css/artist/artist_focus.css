@@ -1,0 +1,235 @@
+@charset "UTF-8";
+
+/* 아티스트상세페이지 */
+.flex-row {
+  flex-direction: row !important;
+}
+.d-flex {
+  display: flex !important;
+}
+
+.col {
+  background-color: #f5f5f5;
+}
+
+.col-1 {
+  margin-right: 8px;
+}
+
+.col-2 {
+  margin-left: 8px;
+}
+
+.container {
+  padding-top: 90px;
+  margin: 0 auto;
+}
+
+.container .detail_wrapper {
+  justify-content: space-between;
+}
+
+/* 왼쪽 */
+.container .side_block {
+  width: 170px;
+}
+
+.container .side_block .artist_info {
+  padding-bottom: 70px;
+  text-align: center;
+}
+
+.artist_info .artist_avatar img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 7px gray;
+}
+
+.artist_info h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+}
+
+.artist_info .e_name {
+  font-size: 15px;
+  margin-bottom: 5px;
+
+}
+
+.artist_info .born {
+  font-size: 15px;
+  margin-bottom: 25px;
+
+}
+
+/* 가운데 */
+.content_block {
+  width: 900px;
+  padding-left: 98px;
+  padding-right: 80px;
+}
+.content_block .review {
+  font-size: 14px;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+.content_block .review h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.content_block .review p {
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+.content_block .review p img {
+  width: 100%;
+}
+
+/* 오른쪽 */
+.side_block .a_list {
+  margin-bottom: 70px;
+  padding: 55px 0 10px;
+  border-bottom: 1px solid darkgray;
+  text-align: center;
+}
+
+.side_block .a_list h3, .side_block .a_banner h3 {
+  font-size: 17px;
+  margin-bottom: 25px;
+}
+
+.side_block .a_list ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.side_block .a_list ul li {
+  margin-bottom: 5px;
+}
+.side_block .a_list ul li:nth-child(1) {
+  margin-right: 15px;
+}
+
+.side_block .a_list ul li a {
+  font-size: 14px;
+}
+
+.side_block .a_list ul li a:hover {
+  color: tomato;
+}
+
+.side_block .a_banner {
+  text-align: center;
+}
+
+.a_banner img {
+  vertical-align: middle;
+  width: 170px;
+}
+
+/* 아트워크 */
+
+.product2 {
+  width: 960px;
+}
+
+.slick_trak {
+  /* display: flex;
+  justify-content: space-between; */
+  width: 1320px;
+  display: flex;
+}
+
+.item {
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.item .artwork_wrap {
+  width: 255px;
+  height: 255px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 15px;
+}
+
+.slick_trak.artworks .item .artwork_wrap {
+  margin-right: 20px!important;
+}
+
+figcaption {
+  color: #333;
+  font-size: 14px;
+}
+figcaption h5 {
+  font-size: 14px;
+  margin-bottom: 8px;
+  margin-top: 12px;
+}
+figcaption p {
+  margin-bottom: 15px;
+}
+
+
+
+/* 버튼 */
+.button_wrap {
+  display: inline-block;
+  padding: 0 10px;
+  width: 100%;
+  height: 83px;
+  bottom: 42px;
+  margin-top: 60px;
+}
+
+.button_wrap .btn_group {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  padding-bottom: 2px;
+}
+
+.button_wrap .btn_group .btn1 {
+  font-size: 15px;
+  color: white;
+  letter-spacing: 1px;
+  background-color: #333;
+  width: 150px;
+  height: 38px;
+}
+
+.button_wrap .btn_group .btn1:hover {
+  background-color: tomato;
+}
+
+.button_wrap .btn_group .like {
+  background: none;
+  margin-left: 20px;
+  margin-top: 4px;
+}
+
+.button_wrap .btn_group .like img {
+  width: 28px;
+}
+
+.button_wrap .btn_group p {
+  margin-top: 11px;
+  margin-left: 3px;
+  font-size: 15px;
+}

@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+/* 아티스트가입 */
+#input_wrap {
+  max-width: 350px;
+  min-width: 350px;
+  padding-top: 95px;
+  padding-bottom: 200px !important;
+}
+
+#input_wrap .title {
+  width: 100%;
+}
+
+.table_a tr td {
+  padding-bottom: 13px !important;
+}
+
+.table_a input[type=file]::file-selector-button {
+  cursor: pointer;
+  border: 1px solid tomato;
+  color: tomato;
+  background-color: white;
+}
+
+.table_a input[type=file]::file-selector-button:hover {
+  border: 1px solid tomato;
+  color: tomato;
+}
+
+.check_wrap {
+  width: 320px;
+  background-color: #f9f9f9;
+  padding: 10px;
+  padding-left: 15px;
+}
+
+.check_wrap span {
+  display: block;
+  margin-bottom: 18px;
+  color: #333;
+}
+
+.check_wrap span:last-child {
+  margin-bottom: 12px;
+}
+
+.check_wrap .check_title {
+  font-weight: bold;
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+.check_wrap .check_btn {
+  margin-left: 10px;
+}
+
+
+/* 갤러리스트 가입 */
+.gallerist_input_wrap {
+  padding-top: 60px;
+}

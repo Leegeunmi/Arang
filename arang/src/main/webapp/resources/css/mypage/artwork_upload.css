@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+.artwork_info_wrap.upload {
+  padding-top: 50px;
+}
+
+/* 등록양식 input */
+input {
+  padding: 5px;
+  display: inline-block;
+  border: 1px solid #f5f5f5;
+  background-color: #f5f5f5;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid #f9f9f9;
+}
+
+.artwork_info h2 input {
+  width: 540px;
+}
+
+.artwork_info .info .info_block {
+  margin-bottom: 20px;
+}
+
+.artwork_info .info .info_block input{
+  width: 255px;
+}
+
+textarea {
+  width: 548px;
+  height: 150px;
+  border: none;
+  resize: none;
+  background-color: #f5f5f5;
+}
+
+textarea:focus {
+  outline: none;
+  border: 1px solid #f5f5f5;
+}
+
+.a_title input {
+  width: 1100px;
+  text-align: center;
+}
+
+a.title .first input {
+  font-weight: bold;
+}
+
+a.title .second input {
+  font-size: 16px;
+  color: gray;
+}
+
+.a_title input::-webkit-input-placeholder {
+   text-align: center;
+}
+
+.a_title input:-moz-placeholder { /* Firefox 18- */
+   text-align: center;
+}
+
+.a_title input::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;
+}
+
+.a_title input:-ms-input-placeholder {
+   text-align: center;
+}
+
+/* 셀렉트 */
+.info_block .last .box {
+  width: 265px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  background-color: #f5f5f5;
+}
+
+/* 파일업로드 관련 */
+#input_file {
+  display: none;
+}
+
+.paintings input{
+  margin-left: 60px;
+}
+
+label {
+   cursor: pointer;
+}
+
+.a_artwork .upload_box {
+  width: 1320px;
+  height: 765px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f5f5;
+  margin-top: 20px;
+}
+
+.a_artwork input {
+  margin-left: 60px;
+}
+
+
+section {
+  padding-bottom: 20px;
+}
+
+.board_btn.service {
+  margin-top: 15px;
+}

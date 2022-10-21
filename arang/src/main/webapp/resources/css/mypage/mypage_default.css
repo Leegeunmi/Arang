@@ -1,0 +1,284 @@
+@charset "UTF-8";
+
+/* 공통 */
+
+.my_info.mypage tr td {
+  height: 20px;
+}
+
+.artist_avatar.mypage {
+  margin-right: 0px;
+}
+
+.btn2_group {
+  float: right;
+}
+
+.btn2 {
+  margin-top: 20px;
+  margin-bottom: 70px;
+}
+
+.container {
+  padding-top: 130px;
+  padding-bottom: 200px;
+}
+
+.container .info_simul {
+  height: 450px;
+  position: relative;
+  background-color: #f5f5f5;
+}
+
+.container .info_wrapper {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.container .info_wrapper.first {
+  padding-top: 68px;
+}
+
+.container .info_wrapper.second {
+  padding-top: 60px;
+}
+
+.container .info_wrapper.second .artist_avatar img {
+  margin-top: 10px;
+}
+
+.info_left .table_a{
+    width: 500px!important;
+}
+
+.info_center .table_a {
+  width: 300px!important;
+}
+
+.info_left {
+  text-align: center;
+}
+
+.artist_avatar img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 7px gray;
+  margin-top: 25px;
+}
+
+.my_info h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+.my_info .e_name {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.table_a td.a_category {
+  font-size: 15px;
+}
+
+.table_a td.a_data {
+  padding-bottom: 30px!important;
+}
+
+.table_a input {
+  width: 160px;
+  height: 7px;
+  border: 1px solid lightgray;
+}
+
+.table_a input.big {
+  width: 330px;
+}
+
+.table_a input.profile_up {
+  border: none;
+  background: none;
+  height: 10px;
+  width: 200px;
+}
+
+/* contacting */
+.board_wrapper {
+  padding-top: 20px;
+}
+
+.board_wrapper input {
+  padding: 3px;
+}
+
+.storage_list.mypage .artist_avatar {
+  width: 0px;
+}
+
+.storage_list.mypage .artist_avatar .contacting_img {
+  margin: 5px 0px;
+  width: 40px;
+  height: 40px;
+  box-shadow: 1px 1px 5px grey;
+}
+
+.storage_list.mypage tr {
+  padding: 10px;
+}
+.storage_list.mypage tr td{
+  padding: 5px 0px;
+  border-top: 1px solid gray;
+}
+
+
+tr td{
+/*  height: 55px;*/
+}
+/* contacting >> */
+/* date */
+.storage_list.mypage.first tr td:nth-child(1) {
+  width: 3%;
+  padding-left: 40px;
+}
+/* time */
+.storage_list.mypage.first tr td:nth-child(2) {
+  width: 5%;
+}
+/* img */
+.storage_list.mypage.first tr td:nth-child(3) {
+  width: 1.7%;
+}
+/* name */
+.storage_list.mypage.first tr td:nth-child(4) {
+  width: 8%;
+}
+/* job */
+.storage_list.mypage.first tr td:nth-child(5) {
+  width: 17%;
+}
+
+/* check */
+.storage_list.mypage.first tr td:nth-child(6) {
+  width: 5%;
+  padding-right: 40px;
+}
+
+.storage_list.mypage.first tr td:nth-child(6) p {
+  float: right;
+}
+
+.YES p{
+  color: tomato;
+}
+
+
+/* contacting << */
+/* date */
+.storage_list.mypage tr td:nth-child(1) {
+  width: 3%;
+  padding-left: 40px;
+}
+/* time */
+.storage_list.mypage tr td:nth-child(2) {
+  width: 5%;
+}
+/* img */
+.storage_list.mypage tr td:nth-child(3) {
+  width: 1.7%;
+}
+/* name */
+.storage_list.mypage tr td:nth-child(4) {
+  width: 8%;
+}
+/* genre */
+.storage_list.mypage tr td:nth-child(5) {
+  width: 16%;
+}
+/* check */
+.storage_list.mypage tr td:nth-child(6) {
+  width: 2%;
+}
+/* check */
+.storage_list.mypage tr td:nth-child(7) {
+  width: 2%;
+  padding-right: 40px;
+}
+
+.storage_list.mypage tr td:nth-child(6) button, .storage_list.mypage tr td:nth-child(7) button {
+  float: right;
+  padding: 5px 15px;
+  background-color: #333;
+  color: white;
+}
+
+.storage_list.mypage tr td:nth-child(6) button:hover, .storage_list.mypage tr td:nth-child(7) button:hover {
+  background-color: tomato;
+}
+
+/* .storage_list.mypage {
+  background-color: #f5f5f5;
+} */
+
+.name_hover:hover {
+  /* font-weight: 500;
+  color: black; */
+  color: tomato;
+}
+
+.sub_title.contacting {
+  display: inline-block;
+}
+
+.arrow {
+  width: 20px;
+  margin-left: 5px;
+  opacity: 0.7.5;
+}
+
+
+/* 갤러리스트 */
+.info_center .my_info.center, .info_right .my_info.right {
+  /* padding-top: 50px; */
+}
+
+.info_left.gallerist .table_a{
+    margin-left: 80px;
+}
+
+.container.my_gallery1, .container.my_gallery2  {
+  padding-bottom: 100px;
+}
+
+.container.my_gallery2 {
+  padding-top: 0px;
+}
+
+.artist_info.d-flex.flex-row {
+  padding-top: 0px;
+}
+
+.container .info_simul.gallerist {
+  height:390px;
+}
+
+.container .info_wrapper.first.gallerist {
+  padding-top: 45px;
+}
+
+.container .info_wrapper.second.gallerist {
+  padding-top: 45px;
+}
+.container .info_simul.gallerist.second {
+  height:420px;
+}
+
+.table_a.gallerist {
+  margin-top: 45px;
+}
+
+#gallerist {
+  padding-bottom: 250px;
+}

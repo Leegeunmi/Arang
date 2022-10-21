@@ -1,0 +1,54 @@
+@charset "UTF-8";
+.board_wrapper {
+	padding-bottom: 200px;
+}
+
+table {
+	max-width: 900px;
+	min-width:900px;
+}
+
+.review {
+	max-width: 900px;
+	min-width:900px;
+}
+
+.board_wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.review input{
+	padding-bottom:10px;
+	width: 879px;
+}
+
+.review #content {
+	padding: 10px;
+	width: 879px;
+}
+
+.sub_txt {
+	padding: 10px;
+}
+
+.findOne_td:nth-child(1) {
+	width: 70px;
+}
+
+.findOne_td:nth-child(2) {
+	width: 480px;
+}
+
+.findOne_td:nth-child(3) {
+	width: 60px;
+}
+
+.findOne_td:nth-child(4) {
+	width: 220px;
+	text-align: right;
+}
+
+.sub_txt.inner .findOne_title {
+	padding-bottom: 3px;
+}

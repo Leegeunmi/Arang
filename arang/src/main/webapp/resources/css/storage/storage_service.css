@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+/*보관신청*/
+#input_wrap {
+  max-width: 360px;
+  min-width: 360px;
+  margin: 0 auto;
+  padding-top: 180px;
+}
+
+#input_wrap .title {
+  position: relative;
+  text-align: center;
+  padding: 10px 0 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #333333;
+}
+
+input {
+  width:335px!important;
+}
+
+select {
+  width: 357px;
+  padding: 10px;
+  border-style: hidden;
+  color: gray;
+  background-color: #f9f9f9;
+}
+.date_td input{
+  width: 325px;
+  color: gray;
+}
+.date_td input:nth-child(1) {
+  margin-bottom: 15px;
+}
+.date_td p {
+  position: absolute;
+  right: 42px;
+  color: gray;
+}
+.date_td p:nth-child(1) {
+  top: 13px;
+}
+.date_td p:nth-child(2) {
+  top: 52px;
+} 
+
+.input_small {
+	width: 30px!important;
+}
+
+.color_white {
+	color: white;
+}

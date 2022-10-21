@@ -1,0 +1,169 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap');
+/* 이달의 작가 */
+.flex-row {
+  flex-direction: row !important;
+}
+.d-flex {
+  display: flex !important;
+}
+
+.col_wrap {
+  width: 645px;
+  margin-right: 30px;
+}
+
+.col_wrap:nth-child(2) {
+	margin-right: 0px!important;
+}
+
+.col {
+  background-color: white;
+}
+
+.col-1 {
+  margin-right: 8px;
+}
+
+.col-2 {
+  margin-left: 8px;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.container .sub_page_top {
+  margin-bottom: 80px;
+}
+
+.container .sub_title {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 27px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.container .row {
+  width: 1320px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container .artist_info {
+  background: white;
+  padding: 20px;
+  padding-bottom: 2px;
+  align-items: center;
+}
+
+.container .artist_avatar {
+  margin-right: 25px;
+}
+
+.container .artist_avatar a img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 7px gray;
+}
+
+.container .artist_text {
+  color: #333;
+  width: 100%;
+}
+
+.futuraM {
+  font-weight: normal;
+  margin-left: 5px;
+}
+
+.like img {
+  width: 20px;
+}
+
+.container .artist_text .first {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.container .artist_text .second {
+  font-size: 14px;
+  display: inline-block;
+  justify-content: space-between;
+}
+
+.container .artwork {
+  width: 195px;
+  padding: 4px 0px 0px;
+  padding-top: 0px;
+}
+
+.container .artwork.small {
+  width: 186px;
+  height: 180px;
+}
+
+.artwork_wrap {
+  padding: 15px;
+  padding-left: 13px;
+}
+
+
+/* 아티스트 */
+small {
+  margin-left: 10px;
+  font-weight: lighter;
+  font-size: 15px;
+}
+
+.container .artist_item:nth-child(3n+0){
+  margin-right: 0px;
+}
+
+.container .artwork_banner {
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.container .artwork_banner img {
+  width: 100%;
+  object-fit: cover;
+  padding: 0;
+}
+
+.banner_wrap {
+  padding: 20px;
+  padding-top: 8px;
+}
+
+.container .artist_item {
+  width: 429px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+
+/* 페이지네이션 */
+.container .pagination {
+  display: flex;
+  justify-content: center !important;
+  margin-top: 80px;
+  padding-bottom: 180px;
+}
+
+.container .pagination ul li {
+  float: left;
+}
+
+.container .pagination .page_link {
+  font-size: 14px;
+  color: #333;
+  padding: 0 10px;
+  vertical-align: middle;
+}

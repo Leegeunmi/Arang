@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+.container {
+  padding-bottom: 200px;
+}
+
+.sub_title {
+  padding-top: 130px;
+}
+
+.list_name {
+  font-family: 'Bebas Neue', cursive;
+  font-weight: nomal;
+  font-size: 21px;
+  /* border-bottom: 1px solid #333;
+  border-width: 20%; */
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.list_name.gallery {
+  margin-top: 55px;
+}
+
+.item .artwork_wrap {
+  width: 218px;
+  height: 218px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 15px;
+}
+.slick_trak.mypage .item {
+  margin-right: 20px
+}
+
+.slick_trak.mypage .item:nth-child(5n) {
+  margin-right: 0px!important;
+}
+
+figcaption h5 {
+    font-size: 14px;
+    margin-bottom: 8px;
+    margin-top: 12px;
+}
+
+figcaption p {
+	color: gray;
+	font-size: 11px;
+}
+.like img {
+	width : 19px;
+}
+
+.item .artwork_wrap.like {
+  width: 218px;
+  height: 218px;
+  position: relative;
+}
+
+.item .artwork_wrap.like img {
+  padding: 0px;
+}
+
+button.like.artwork_like {
+  position: absolute;
+  top: 17px;
+  right: 15px;
+}
+
+.like.artist {
+  float: right;
+}

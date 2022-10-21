@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+
+/* 해드라인 */
+.headline.artworks {
+  margin-top: 180px;
+}
+
+.headline.gallerys {
+  margin-top: 90px;
+}
+
+.headline {
+  border-bottom: 1px solid black;
+  margin-bottom: 15px;
+}
+.headline p:nth-child(1) {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 30px;
+  letter-spacing: 0.3px;
+  line-height: 1px;
+}
+.headline p:nth-child(2) {
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  font-size: 16px;
+  line-height: 45px;
+}
+
+/* 작품섹션(슬라이드배너) */
+#slidebanner {
+  margin-top: 10px;
+}
+
+#carousel-wrap {
+  position: relative;
+  margin: 10px auto;
+  width: 1280px;
+  height: 220px;
+  padding: 20px;
+  background: white;
+}
+
+#carousel-prev, #carousel-next {
+  position: absolute;
+  cursor: pointer;
+  top: 110px;
+}
+
+#carousel-prev {
+  left: -21px;
+}
+
+#carousel-next {
+  right: -20px;
+}
+
+#carousel {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#carousel-inner{
+  width: 200px;
+}
+
+#carousel-inner ul.column {
+  width: 1300px; /*605 + 15 == 620 */
+  height: 200px;
+  float: left;
+  padding: 0 20px;
+  /* overflow: hidden; */
+}
+
+#carousel-inner ul.column li {
+  /* width: 200px; */
+  float: left;
+  /* padding-left: 55px; */
+  margin-right: 55px;
+  display: inline-block;
+}
+
+
+/* 갤러리섹션 */
+#gallerys_wrap {
+  width: 100%;
+}
+#gallerys_wrap .box {
+  position: relative;
+}
+#gallerys_wrap .box .photobox {
+  float: left;
+  left: 0;
+  margin-right: 15px;
+  padding: 0 5px;
+}
+#gallerys_wrap .box .photobox:first-child {
+  margin-left: 10px;
+}
+#gallerys_wrap .box .photobox:last-child {
+  margin-right: 0;
+}
+#gallerys_wrap .box .photobox p:nth-child(2) {
+  font-size: 16px;
+  font-weight: bold;
+}
+#gallerys_wrap .box .photobox p:nth-child(3) {
+  font-size: 14px;
+  color: #9e9e9e;
+}

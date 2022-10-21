@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/*공지상세페이지*/
+#command{
+    
+}
+.container{
+    height: 100vh;
+}
+.detail_wrapper{
+    width: 100%;
+	padding-top: 100px;
+    border-top: 3px solid #000;
+    display: inline-flex;
+    align-items: center;
+}
+.side_top{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.side_top .notice_info .input_box{
+    display: inline-flex;
+}
+.side_top .notice_info .input_box > h2{
+    font-size: 25px;
+    background: #dfdfdf;
+}
+.side_top .notice_info .input_box > div{
+    font-size: 30px;
+    background: #f1f1f1;
+}
